@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - Auto Animate</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../dist/reveal.css">
+		<link rel="stylesheet" href="../dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="../plugin/highlight/monokai.css">
+
+    <style>
+      .text--small {
+        font-size: .8em;
+      }
+      .text--small {
+        font-size: .8em;
+      }
+    </style>
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+        <section data-transition="convex">
+          <h1>Procesamiento de señales análogas y Digitales</h1>
+          <h2>Conceptos básicos</h2>
+        </section>
+        <section>
+          <h3>Procesamiento de señales</h3>
+          <p>El procesamiento de señales es un área de la ingeniería eléctrica que se encarga de manipular señales para mejorar su calidad o extraer información útil de ellas. El procesamiento de señales se divide en dos categorías: analógica y digital</p>
+        </section>
+
+        <section>
+          <h2>Procesamiento de señales</h2>
+          <p>Las señales usadas para conversión analógico-digital y viceversa se realizan mediante dispositivos llamados ACD y DAC (Analogic to Digial Converter y Digital to Analogic converter, respectivamente) </p>
+        </section>
+
+        <section>
+          <section>
+            <h3>Procesamiento de señales análogas</h3>
+            <p>
+              Este procesamiento se realiza mediante técnicas y dispositivos que operan en el dominio analógico, como amplificación, filtrado, modulación, demodulación y otras operaciones para mejorar, analizar o modificar las características de las señales.
+            </P>
+          </section>
+
+          <section data-transition="concave">
+            <h3>Conversión señal análoga-digital</h3>
+            <p >Esta conversión es realizada mediante un ADC, realiza los siguientes procesos para la conversión:</p>
+
+            <ul>
+              <li class="text--small">
+                <p class="text--small">
+                  <span>Muestreo: </span> Se realizan muestras de la señal análoga en momentos concretos en el tiempo
+                </p>
+              </li>
+              <li class="text--small">
+                <p class="text--small">
+                  <span>Cuantización: </span> A cada muestra se le realiza una cuantización digital, asignándole un valor discreto a la muestra tomada, de un rango discreto de números
+                </p>
+              </li>
+              <li class="text--small">
+                <p class="text--small"><span>Codificación: </span>Los valores cuantificados son codificados en un valor digital (generalmente binario)
+                </p>
+              </li>
+            </ul>
+
+          </section>
+          
+
+        </section>
+
+        <section>
+          <section>
+            <h3>Señales digitales</h3>
+            <p>
+              es el uso de algoritmos y técnicas matemáticas para manipular señales de entrada digitales, como señales de audio, video o datos, con el objetivo de obtener información útil o realizar acciones específicas en ellas.
+            </p>
+          </section>
+          <section data-transition="concave">
+            <h3>Conversión señal análoga-digital</h3>
+            <p>Esta conversión se realiza mediante un DAC, sus precesos para una conversión son los siguientes: </p>
+
+            <ul>
+              <li class="text--small">
+                <p>
+                  <span>Decodificación: </span> Los valores digitales obtenidos se decodifican para obtener los valores discretos de la señal
+                </p>
+              </li>
+              <li class="text--small">
+                <p><span>Conversión: </span> Los valores discretos decodificados son convertidos en una señal análoga continua en el tiempo
+                </p>
+              </li>
+              <li class="text--small">
+                <p><span>Filtrado</span> Esta señal análoga tiene que ser filtrada para eliminar los artefactos que estén tras la señal digital
+                </p>
+              </li>
+            </ul>
+          </section>
+        </section>
+      
+
+			</div>
+
+		</div>
+
+		<script src="../dist/reveal.js"></script>
+		<script src="../plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				center: true,
+				hash: true,
+				plugins: [ RevealHighlight ]
+			});
+		</script>
+
+	</body>
+</html>
