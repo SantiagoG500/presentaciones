@@ -82,12 +82,62 @@
               <li><b>Codificación: </b> Una vez cuantifiacdos, estos valores numericos (representados en binario) son el producto de la conversión</li>
             </ul>
           </section>
+
+          <!-- muestreo -->
           <section data-auto-animate>
-            <h3>ADC (Analogic to Digital Converter)</h3>
+            <h3>muestreo</h3>
             <p>
-              dos aspectos inportantes para convertir señales análogas en digitales son el <b>sampling rate</b> y la <b>resolución</b> del DAC
+              Para entender el poceso del muestreo es importante entender qué es el <b>sampling rate</b> y la <b>resolución</b> en un DAC.
             </p>
           </section>
+          <section data-auto-animate>
+            <h3>muestreo</h3>
+            
+            <p>
+              <b>Sampling rate</b> o frecuencia de muestreo son la cantidad de muestras tomadas en un límite de tiempo, (generalmente 1 segundo).
+            </p>
+            <p>
+              <b>Resolución</b> es la cantidad de valores en las que un DAC puede intentar representar una onda, representada en bits.
+            </p>
+            <p>
+              A mayor resolución, mayor es la cantidad de valores discretos que un ADC o DAC puede usar para aproximarse a la señal recibida.
+            </p>
+          </section>
+
+          <section data-auto-animate>
+            <h3>Muestreo (resolución baja)</h3>
+            <p>
+              Con unaa resolución	baja, la onda final obtenida será muy distinta de la original a falta de detalles.
+            </p>
+            <img src="https://static4.arrow.com/-/media/arrow/images/miscellaneous/0/0418_resolution_example.jpg?h=279&w=466&hash=A475ACD2C6AFE862775E56A7083757A7" alt="adc resolución">
+          </section>
+
+          <!-- <section data-auto-animate>
+            <h3>Muestreo (resolución baja)</h3>
+            <p>
+              Para determinar el tamaño de un escalón se realiza la siguiente fórmula: <b> V<sub>Ref</sub> / N </b>. Dónde: 
+            </p>
+
+            <ul>
+              <li><b>Vref</b> es el voltaje de referencia</li>
+              <li><b>N</b> total de niveles del ADC</li>
+            </ul>
+
+            <p>
+              por ejemplo: el tamaño de un escalon de un ADC de <b>5V</b> y <b>12 bits</b> de reslución será: <b>0,0012V</b>
+            </p>
+          </section> -->
+
+          <section data-auto-animate>
+            <h3>Muestreo (Sampling rate bajo)</h3>
+            <p>
+              Si no muestreamos con la frecuencia suficiente ocurrirá <b>aliasing</b>. Por eso el sampling rate tiene que ser dos veces la resolución que vamos a capturar
+            </p>
+            <img src="https://static4.arrow.com/-/media/arrow/images/miscellaneous/0/0418_aliasing_example.jpg?h=307&w=590&hash=9CE557AF9A1C433862489E36ABC49DB1">
+          </section>
+
+          <!-- muestreo -->
+
 
           <section></section>
 
@@ -96,6 +146,15 @@
         <!-- ADCs -->
 
 
+        <!-- DACs -->
+        <section data-transition="convex">
+          <section>
+            <h3>DAC (Digital to Analogic Converter) </h3>
+            <p>Un DAC realiza la operación inversa. Toma una señal digital y la transforma en una señal digital.</p>
+            <img src="https://www.electricaltechnology.org/wp-content/uploads/2020/04/DAC-Digital-to-Analog-Converter.png" alt="DAC converidor">
+          </section>
+        </section>
+        <!-- DACs -->
 			</div>
 
 		</div>
